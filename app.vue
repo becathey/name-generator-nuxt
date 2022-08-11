@@ -19,7 +19,7 @@
         </div>
       </div>
       <div class="option-container">
-        <h4>3) Choose name's length</h4>
+        <h4>3) Choose the name's length</h4>
         <div class="option-buttons">
           <button class="option option-left">Long</button>
           <button class="option">All</button>
