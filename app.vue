@@ -6,9 +6,9 @@
       <div class="option-container">
         <h4>1) Choose a gender</h4>
         <div class="option-buttons">
-          <button class="option option-left">Boy</button>
+          <button class="option option-left">Male</button>
           <button class="option">Unisex</button>
-          <button class="option option-right">Girl</button>
+          <button class="option option-right">Female</button>
         </div>
       </div>
       <div class="option-container">
