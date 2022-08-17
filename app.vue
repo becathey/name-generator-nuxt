@@ -33,24 +33,64 @@ const options = reactive<OptionsState>({
       <div class="option-container">
         <h4>1) Choose a gender</h4>
         <div class="option-buttons">
-          <button :class="options.gender === Gender.MALE && 'option-active'" class="option option-left">Male</button>
-          <button :class="options.gender === Gender.UNISEX && 'option-active'" class="option">Unisex</button>
-          <button :class="options.gender === Gender.FEMALE && 'option-active'" class="option option-right">Female</button>
+          <button 
+            :class="options.gender === Gender.MALE && 'option-active'" 
+            class="option option-left"
+            @click="options.gender = Gender.MALE"
+          >Male
+          </button>
+          <button 
+            :class="options.gender === Gender.UNISEX && 'option-active'" 
+            class="option"
+            @click="options.gender = Gender.UNISEX"
+          >Unisex
+          </button>
+          <button 
+            :class="options.gender === Gender.FEMALE && 'option-active'" 
+            class="option option-right"
+            @click="options.gender = Gender.FEMALE"
+          >Female
+          </button>
         </div>
       </div>
       <div class="option-container">
         <h4>2) Choose the name's popularity</h4>
         <div class="option-buttons">
-          <button :class="options.popularity === Popularity.TRENDY && 'option-active'" class="option option-left">Trendy</button>
-          <button :class="options.popularity === Popularity.UNIQUE && 'option-active'" class="option option-right">Unique</button>
+          <button 
+            :class="options.popularity === Popularity.TRENDY && 'option-active'" 
+            class="option option-left"
+            @click="options.popularity = Popularity.TRENDY"
+          >Trendy
+          </button>
+          <button 
+            :class="options.popularity === Popularity.UNIQUE && 'option-active'" 
+            class="option option-right"
+            @click="options.popularity = Popularity.UNIQUE"
+          >Unique
+          </button>
         </div>
       </div>
       <div class="option-container">
         <h4>3) Choose the name's length</h4>
         <div class="option-buttons">
-          <button :class="options.length === Length.LONG && 'option-active'" class="option option-left">Long</button>
-          <button :class="options.length === Length.ALL && 'option-active'" class="option">All</button>
-          <button :class="options.length === Length.SHORT && 'option-active'" class="option option-right">Short</button>
+          <button 
+            :class="options.length === Length.LONG && 'option-active'" 
+            class="option option-left"
+            @click="options.length = Length.LONG"
+          >Long
+          </button>
+          <button 
+            :class="options.length === Length.ALL && 'option-active'" 
+            class="option"
+            @click="options.length = Length.ALL"
+          >All
+          </button>
+          <button 
+            :class="options.length === Length.SHORT && 'option-active'" 
+            class="option option-right"
+            @click="options.length = Length.SHORT"
+          >Short
+          </button>
         </div>
       </div>
     </div>
