@@ -156,6 +156,7 @@ h1 {font-size: 3rem;}
 }
 .cards-container {
   display: flex;
+  justify-content: center;
   flex-wrap: wrap;
   margin-top: 3rem;
 }
