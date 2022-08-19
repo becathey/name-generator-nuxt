@@ -93,7 +93,12 @@ const selectedNames = ref<string[]>([])
       </div>
       <button @click="computeSelectedNames" class="primary">Find Names</button>
     </div>
-    {{selectedNames}}
+    <div class="cards-container">
+      <div v-for="name in selectedNames" :key="name" class="card">
+        <h4>{{name}}</h4>
+        <p>x</p>
+      </div>
+    </div>
   </div>
 </template>
 
@@ -147,6 +152,28 @@ h1 {font-size: 3rem;}
   background-color: hsl(360, 90%, 65%);
   color: white;
   font-size: 1rem;
+  cursor: pointer;
+}
+.cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 3rem;
+}
+.card {
+  position: relative;
+  width: 28%;
+  margin-right: 0.5rem;
+  margin-bottom: 1rem;
+  padding: 0.1rem;
+  background-color: hsl(220, 70%, 30%);
+  color: white;
+  border-radius: 1rem;
+}
+.card p {
+  position: absolute;
+  top: -29%;
+  left: 92.5%;
+  color: hsla(0, 0%, 100%, 0.178);
   cursor: pointer;
 }
 </style>
