@@ -38,6 +38,11 @@ const computeSelectedNames = () => {
     selectedNames.value = filteredNames.map(name => name.name)
 }
 const selectedNames = ref<string[]>([])
+const removeName = (index: number) => {
+  const filteredNames = [...selectedNames.value]
+  filteredNames.splice(index, 1)
+  selectedNames.value = filteredNames
+}
 </script>
 
 <template>
@@ -49,11 +54,7 @@ const selectedNames = ref<string[]>([])
       <button @click="computeSelectedNames" class="primary">Find Names</button>
     </div>
     <div class="cards-container">
-      <!-- <div v-for="name in selectedNames" :key="name" class="card">
-        <h4>{{name}}</h4>
-        <p>x</p>
-      </div> -->
-      <CardName v-for="name in selectedNames" :key="name" :name="name" />
+      <CardName v-for="(name, index) in selectedNames" :key="name" :name="name" @remove="() => removeName(index)" :index="index" />
     </div>
   </div>
 </template>

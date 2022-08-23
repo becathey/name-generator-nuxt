@@ -1,14 +1,20 @@
 <script setup lang="ts">
 interface NameProps {
-    name: string
+    name: string;
+    index: number;
 }
 const props = defineProps<NameProps>()
+
+const emit = defineEmits(["remove"])
+const removeName = () => {
+    emit("remove", props.index)
+}
 </script>
 
 <template>
     <div class="card">
         <h4>{{name}}</h4>
-        <p>x</p>
+        <p @click="removeName">x</p>
     </div>
 </template>
 
@@ -25,9 +31,9 @@ const props = defineProps<NameProps>()
 }
 .card p {
   position: absolute;
-  top: -29%;
+  top: -25%;
   left: 92.5%;
-  color: hsla(0, 0%, 100%, 0.178);
+  color: hsla(0, 0%, 100%, 0.5);
   cursor: pointer;
 }
 </style>
