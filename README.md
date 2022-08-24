@@ -1,6 +1,6 @@
-# Nuxt 3 Minimal Starter
+# Name Generator
 
-Look at the [nuxt 3 documentation](https://v3.nuxtjs.org) to learn more.
+This project is a name generator built with Nuxt and Vue.js. It allows selecting among options for the type of names being generated. Male, female, or unisex can be chosen for gender. Trendy or unique can be chosen for popularity of the names. Long or short can be chosen for the name length.
 
 ## Setup
 
