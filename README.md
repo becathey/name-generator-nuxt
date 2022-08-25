@@ -1,6 +1,6 @@
 # Name Generator
 
-This project is a name generator built with Nuxt and Vue.js. It allows selecting among options for the type of names being generated. Male, female, or unisex can be chosen for gender. Trendy or unique can be chosen for popularity of the names. Long or short can be chosen for the name length.
+This project is a name generator built with Nuxt, Vue.js, and TypeScript. It allows selecting among options for the type of names being generated. Male, female, or unisex can be chosen for gender. Trendy or unique can be chosen for popularity of the names. Long or short can be chosen for the name length.
 
 ## Setup
 
