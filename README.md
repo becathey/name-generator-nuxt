@@ -4,7 +4,7 @@ This project is a name generator built with Nuxt and Vue.js. It allows selecting
 
 ## Setup
 
-Make sure to install the dependencies:
+Install the dependencies:
 
 ```bash
 # yarn
@@ -12,9 +12,6 @@ yarn install
 
 # npm
 npm install
-
-# pnpm
-pnpm install --shamefully-hoist
 ```
 
 ## Development Server
@@ -39,4 +36,4 @@ Locally preview production build:
 npm run preview
 ```
 
-Checkout the [deployment documentation](https://v3.nuxtjs.org/guide/deploy/presets) for more information.
+For information on deployment, see the [deployment documentation](https://v3.nuxtjs.org/guide/deploy/presets).
