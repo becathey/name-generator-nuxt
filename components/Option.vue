@@ -64,4 +64,20 @@ const computeButtonClasses = (value, index) => {
   background-color: hsl(360, 90%, 70%);
   color: white;
 }
+@media (max-width: 40rem) {
+  .option {
+    width: 8rem;
+  }
+}
+@media (max-width: 424px) {
+  .option {
+    width: 100%;
+  }
+  .option-left {
+    border-radius: 0;
+  }
+  .option-right {
+    border-radius: 0;
+  }
+}
 </style>
